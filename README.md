@@ -3,21 +3,23 @@ A simple and small toy C-compiler
 
 ## How to run ?
 Enter following 4 commands into terminal :
-
-    lex cucu.l
-
-    yacc -d cucu.y 
-
+```bash
+    $ lex cucu.l
+```
+```bash
+    $ yacc -d cucu.y 
+```
+```bash
     cc lex.yy.c y.tab.c -o cucu
 
     ./cucu Sample1.cu
-
- Where cucu.l is lex file , cucu.y is yacc file , Sample1.cu is our program file 
+```
+ Where `cucu.l` is lex file , `cucu.y` is yacc file , Sample1.cu is our program file 
  
 After execution of these commands , Linux terminal will create 2 more files, one is Lexer.txt and Parser.txt
 
-Lexer.txt will contains tokens of our program, where as 
-Parser.txt contains structual breakdown/errors of our program.
+`Lexer.txt` will contain tokens of our program, where as 
+`Parser.txt` contains structual breakdown/errors of our program.
     
 ## Assumptions while entering the program file;
 
